@@ -4,10 +4,10 @@
 
 1. **Create the Namespace**
 
-   The manifests use the `todoapp` namespace. Create it if it does not exist:
+   The manifests use the `mateapp` namespace. Create it if it does not exist:
 
    ```sh
-   kubectl create namespace todoapp
+   kubectl create namespace mateapp
    ```
 
 2. **Apply the Deployment, ClusterIP and HPA Manifests**
@@ -29,8 +29,8 @@
 4. **Check Status**
 
    ```sh
-   kubectl get pods -n todoapp
-   kubectl get hpa -n todoapp
+   kubectl get pods -n mateapp
+   kubectl get hpa -n mateapp
    ```
 
 ## 2. Resource Requests and Limits
@@ -90,7 +90,7 @@
   ```
 - Find the Node IP and port:
   ```sh
-  kubectl get service todoapp -n todoapp
+  kubectl get service todoapp -n mateapp
   ```
 - Access the app at: `http://<NodeIP>:30080`
 
