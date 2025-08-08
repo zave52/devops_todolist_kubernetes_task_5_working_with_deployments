@@ -100,4 +100,4 @@
   ```sh
   kubectl apply -f .infrastructure/clusterIp.yml
   ```
-- The app will be accessible internally at `http://todoapp.todoapp.svc.cluster.local:80`
+- The app will be accessible internally at `http://todoapp.mateapp.svc.cluster.local:80`
